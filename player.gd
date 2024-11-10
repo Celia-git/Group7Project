@@ -10,7 +10,7 @@ func _ready():
 	add_to_group("player")
 
 func _physics_process(delta: float) -> void:	# Runs every frame, essentially handling most player logic.
-	$HealthBar.value = health		# Update the health bar.
+	$ProgressBar.value = health		# Update the health bar.
 	
 	if health <= 0:	# If the player runs out of health, hide the player character to give the illusion of death.
 		sprite.visible = false
